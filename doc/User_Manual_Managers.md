@@ -12,9 +12,8 @@ This document provides step-by-step instructions for managers and admin users re
 6. [Assigning Drivers](#6-assigning-drivers)  
 7. [Tracking Drivers Live](#7-tracking-drivers-live)  
 8. [Updating Delivery Statuses](#8-updating-delivery-statuses)  
-9. [Filtering & Searching Deliveries](#9-filtering--searching-deliveries)  
-10. [Handling System Errors](#10-handling-system-errors)  
-11. [Best Practices](#11-best-practices)
+9. [Handling System Errors](#10-handling-system-errors)  
+10. [Best Practices](#11-best-practices)
 
 ---
 
@@ -61,7 +60,7 @@ The dashboard includes:
 ### ✔ Tools
 - **Create Delivery** button  
 - **Assign Driver** modal  
-- **Live Map** modal (Leaflet)  
+- **Live Map** modal 
 - Filters & Sorting options  
 
 ---
@@ -131,24 +130,11 @@ Managers can manually update statuses if needed:
 
 - **pending** → waiting for assignment  
 - **assigned** → driver selected  
-- **out_for_delivery** → driver started  
-- **arriving** → driver near destination  
+- **in progess** → driver started  
 - **delivered** → customer received items  
 - **completed** → admin confirmation  
 
 Drivers also update statuses automatically via their UI.
-
----
-
-# 9. Filtering & Searching Deliveries
-
-Use the dashboard tools:
-
-- Filter by status  
-- Search by order ID  
-- Sort by driver, status, or date  
-
-This helps managers focus on active deliveries first.
 
 ---
 
