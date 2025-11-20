@@ -23,7 +23,7 @@ BAKE4U-Documentation/
 │
 ├── README.md                 ← You are here
 │
-└── docs/
+└── doc/
     ├── DMS_Documentation.md
     ├── Tracking_System.md
     ├── User_Manual_Managers.md
