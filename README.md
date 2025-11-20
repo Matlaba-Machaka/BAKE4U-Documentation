@@ -1,4 +1,4 @@
-# 🍞 BAKE4U – Delivery & Tracking System Documentation
+# BAKE4U – Delivery & Tracking System Documentation
 
 Welcome to the official documentation repository for **BAKE4U**, a rOrder & Delivery Management System (OMS/DMS) built with PHP, MySQL, JavaScript, and Leaflet.js.
 
@@ -32,7 +32,7 @@ BAKE4U-Documentation/
 
 ---
 
-## 🚀 Core Features
+## Core Features
 
 ### **Delivery Management System (DMS)**
 - Delivery creation  
@@ -66,27 +66,27 @@ BAKE4U-Documentation/
 
 ## 📄 Documentation Index
 
-### 🔧 **Delivery Management System Documentation**
+###  **Delivery Management System Documentation**
 ➡️ `/docs/DMS_Documentation.md`  
 
 ---
 
-### 📍 **Tracking System Documentation**
+###  **Tracking System Documentation**
 ➡️ `/docs/Tracking_System.md`  
 
 ---
 
-### 🗂 **Manager & Admin User Manual**
+###  **Manager & Admin User Manual**
 ➡️ `/docs/User_Manual_Managers.md`  
 
 ---
 
-### 🛠 **Technical Administrator Manual**
+###  **Technical Administrator Manual**
 ➡️ `/docs/User_Manual_TechAdmin.md`  
 
 ---
 
-## 🧱 System Architecture Summary
+##  System Architecture Summary
 
 ```
 +----------------------+         +----------------------+
@@ -149,25 +149,21 @@ This repository is designed to demonstrate:
 
 ---
 
-## 📈 Future Enhancements
+## Future Enhancements
 
 - WebSocket-based live tracking  
 - Automated ETA predictions  
 - Push notifications to customers  
-- Manager analytics dashboard  
-- Delivery performance reporting  
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Matlaba Tshepiso Clayton Machaka**  
-BSc Computer Science | Software & Systems Developer  
+BSc Computer Science | Systems Developer & Cybersecurity 
 Johannesburg, South Africa
 
 LinkedIn: [matlaba-tshepiso-clayton-machaka](https://www.linkedin.com/in/matlaba-tshepiso-clayton-machaka-3aa575389/)  
-GitHub: [Matlaba-Machaka](https://github.com/Matlaba-Machaka)
-
 ---
 
 # 📌 End of README.md
