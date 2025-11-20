@@ -163,7 +163,4 @@ This repository is designed to demonstrate:
 BSc Computer Science | Systems Developer & Cybersecurity 
 Johannesburg, South Africa
 
-LinkedIn: [matlaba-tshepiso-clayton-machaka](https://www.linkedin.com/in/matlaba-tshepiso-clayton-machaka-3aa575389/)  
----
-
 # 📌 End of README.md
