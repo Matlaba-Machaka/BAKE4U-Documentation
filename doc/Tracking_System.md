@@ -8,7 +8,6 @@ This document covers the customer-facing and internal tracking system used to mo
 2. [Tracking Architecture](#2-tracking-architecture)
 3. [Order Tracking API](#3-order-tracking-api)
 4. [Haversine Distance Calculation](#4-haversine-distance-calculation)
-5. [Driver Last Known Coordinates](#5-driver-last-known-coordinates)
 6. [Real-Time Status Updates](#6-real-time-status-updates)
 7. [Customer Tracking Interface](#7-customer-tracking-interface)
 8. [Error Handling](#9-error-handling)
@@ -68,7 +67,7 @@ Each request returns:
   "success": true,
   "order": {
     "order_id": 123,
-    "status": "out_for_delivery",
+    "status": "in progress",
     "delivery_address": "123 Main Street",
     "delivery_lat": -26.11,
     "delivery_lng": 28.05
@@ -116,29 +115,7 @@ The calculated value is returned to customers as `distance_km`.
 
 ---
 
-# 5. Driver Last Known Coordinates
-
-Fetched using:
-
-```sql
-SELECT driver_, gps_latitude, gps_longitude, recorded_at
-FROM -----_---
-WHERE driver_-- = ?
-ORDER BY recorded_at DESC
-LIMIT 1;
-```
-
-Returned to customers as:
-```json
-{
-  "lat": -26.12,
-  "lng": 28.06
-}
-```
-
----
-
-# 6. Real-Time Status Updates
+# 5. Real-Time Status Updates
 
 The customer UI automatically polls the API every **5–10 seconds**:
 
@@ -158,7 +135,7 @@ Updates include:
 
 ---
 
-# 7. Customer Tracking Interface
+# 6. Customer Tracking Interface
 
 Key UI features:
 - Status progress bar  
@@ -175,7 +152,7 @@ Technologies:
 
 ---
 
-# 8. Error Handling
+# 7. Error Handling
 
 Common issues:
 - Missing `order_id`  
@@ -194,7 +171,7 @@ Example error response:
 
 ---
 
-# 9. Future Enhancements
+# 8. Future Enhancements
 
 - WebSockets to replace polling  
 - Show full route path  
