@@ -160,7 +160,7 @@ This repository is designed to demonstrate:
 ##  Author
 
 **Matlaba Tshepiso Clayton Machaka**  
-BSc Computer Science | Systems Developer & Cybersecurity 
+BSc Computer Science | Systems Dev & Cybersecurity, 
 Johannesburg, South Africa
 
 # 📌 End of README.md
