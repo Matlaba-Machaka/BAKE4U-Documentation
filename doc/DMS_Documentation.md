@@ -95,17 +95,8 @@ Deliveries are created when:
 - `delivery_address`  
 - `gps_latitude`  
 - `gps_longitude`  
-- `driver_id` *(optional)*  
+- `driver_id`   
 - `status` = `pending`  
-
-### 4.3 SQL Insert
-
-```sql
-INSERT INTO deliveries (order_id, delivery_address, gps_latitude, gps_longitude, status)
-VALUES (?, ?, ?, ?, 'pending');
-```
-
----
 
 # 5. Driver Assignment
 
@@ -114,16 +105,6 @@ VALUES (?, ?, ?, ?, 'pending');
 2. System updates `driver_id`  
 3. Status changes to `assigned`  
 4. Driver sees delivery on dashboard  
-
-### 5.2 Assignment Query
-
-```sql
-UPDATE deliveries
-SET driver_id = ?, status = 'assigned'
-WHERE delivery_id = ?;
-```
-
----
 
 # 6. Leaflet Mapping & Geolocation
 
@@ -155,7 +136,7 @@ Tracking is implemented through **polling** (every 5 seconds).
 
 **Endpoint:**
 ```
-POST /driver/update-location.php
+POST /driver/-----------.php
 ```
 
 **Payload:**
@@ -170,19 +151,8 @@ POST /driver/update-location.php
 ### 7.2 Manager Dashboard Polling
 
 ```
-GET /api/get-driver-location.php?driver_id=12
+GET /api/get-driver_id-----------
 ```
-
-### 7.3 Fetch Latest Location Query
-
-```sql
-SELECT driver_id, gps_latitude, gps_longitude, recorded_at
-FROM driver_locations
-WHERE driver_id = ?
-ORDER BY recorded_at DESC
-LIMIT 1;
-```
-
 ---
 
 # 8. Geocode Caching System
@@ -207,14 +177,6 @@ created_at
 IF address exists → return cached
 ELSE → geocode → store → return
 ```
-
-### Example SELECT
-
-```sql
-SELECT * FROM geocode_cache WHERE address = ? LIMIT 1;
-```
-
----
 
 # 9. Delivery Status Workflow
 
@@ -301,4 +263,4 @@ Potential enhancements:
 
 ---
 
-# 📌 End of Document
+# End of Document
