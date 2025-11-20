@@ -11,9 +11,8 @@ This manual provides developers and technical administrators with the required k
 5. [Managing the Geocode Cache](#5-managing-the-geocode-cache)  
 6. [Fixing Stuck Deliveries or Sessions](#6-fixing-stuck-deliveries-or-sessions)  
 7. [Driver GPS Issues](#7-driver-gps-issues)  
-8. [API Debugging](#8-api-debugging)  
-9. [System Security Notes](#9-system-security-notes)  
-10. [Maintenance Checklist](#10-maintenance-checklist)
+8. [System Security Notes](#9-system-security-notes)  
+9. [Maintenance Checklist](#10-maintenance-checklist)
 
 ---
 
@@ -71,12 +70,6 @@ Important tables:
 | `driver_locations` | Location history |
 | `geocode_cache` | Address → coords cache |
 
-### ERD:
-```
-users → drivers → deliveries → driver_locations
-orders → deliveries
-```
-
 ---
 
 # 4. Troubleshooting Common Errors
@@ -126,14 +119,6 @@ TRUNCATE geocode_cache;
 
 # 6. Fixing Stuck Deliveries or Sessions
 
-### Delivery stuck at "assigned"
-Fix:
-```sql
-UPDATE deliveries
-SET status = 'out_for_delivery'
-WHERE delivery_id = ?;
-```
-
 ### Destroying corrupted sessions
 ```php
 session_unset();
@@ -159,25 +144,7 @@ LIMIT 1;
 
 ---
 
-# 8. API Debugging
-
-### Enable verbose error reporting (dev only):
-
-```php
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-```
-
-### Check PHP error logs:
-- `/logs/error_log`  
-- Hosting control panel logs  
-
-### Test API responses:
-Use Postman or browser dev tools.
-
----
-
-# 9. System Security Notes
+# 8. System Security Notes
 
 - Always use prepared statements (PDO)  
 - Validate all user inputs  
@@ -187,7 +154,7 @@ Use Postman or browser dev tools.
 
 ---
 
-# 10. Maintenance Checklist
+# 9. Maintenance Checklist
 
 Weekly tasks:
 - Review `driver_locations` table for size bloat  
@@ -199,4 +166,4 @@ Weekly tasks:
 
 ---
 
-# 📌 End of Document
+#  End of Document
