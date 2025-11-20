@@ -1,6 +1,6 @@
 # BAKE4U – Delivery & Tracking System Documentation
 
-Welcome to the official documentation repository for **BAKE4U**, a rOrder & Delivery Management System (OMS/DMS) built with PHP, MySQL, JavaScript, and Leaflet.js.
+Welcome to the official documentation repository for **BAKE4U**, a Order & Delivery Management System (OMS/DMS) built with PHP, MySQL, JavaScript, and Leaflet.js.
 
 This repository contains complete **technical and user-facing documentation** covering:
 
