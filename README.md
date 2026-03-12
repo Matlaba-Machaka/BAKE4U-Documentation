@@ -16,7 +16,7 @@ This documentation demonstrates full-stack engineering, system maintenance, trou
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 BAKE4U-Documentation/
@@ -64,15 +64,15 @@ BAKE4U-Documentation/
 
 ---
 
-## 📄 Documentation Index
+## Documentation Index
 
 ###  **Delivery Management System Documentation**
-➡️ `/docs/DMS_Documentation.md`  
+ `/docs/DMS_Documentation.md`  
 
 ---
 
 ###  **Tracking System Documentation**
-➡️ `/docs/Tracking_System.md`  
+ `/docs/Tracking_System.md`  
 
 ---
 
@@ -82,7 +82,7 @@ BAKE4U-Documentation/
 ---
 
 ###  **Technical Administrator Manual**
-➡️ `/docs/User_Manual_TechAdmin.md`  
+ `/docs/User_Manual_TechAdmin.md`  
 
 ---
 
@@ -112,7 +112,7 @@ BAKE4U-Documentation/
 
 ---
 
-## 🎯 Purpose of This Repository
+##  Purpose of This Repository
 
 This repository is designed to demonstrate:
 
@@ -126,7 +126,7 @@ This repository is designed to demonstrate:
 
 ---
 
-## 🧩 Technologies Used
+##  Technologies Used
 
 - **PHP (Backend)**
 - **MySQL / MariaDB (Database)**
@@ -138,7 +138,7 @@ This repository is designed to demonstrate:
 
 ---
 
-## 🛡 Security Considerations
+##  Security Considerations
 
 - PDO prepared statements  
 - Role-based access enforcement  
@@ -163,4 +163,4 @@ This repository is designed to demonstrate:
 BSc Computer Science | Systems Dev & Cybersecurity, 
 Johannesburg, South Africa
 
-# 📌 End of README.md
+#  End of README.md
